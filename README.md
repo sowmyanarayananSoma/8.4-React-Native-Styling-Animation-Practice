@@ -15,7 +15,7 @@ cd GlossAndCo
 ### 2. Install dependencies
 
 ```bash
-npx expo install react-native-reanimated react-native-worklets-core
+npx expo install react-native-reanimated react-native-worklets
 ```
 
 Add the Babel plugin to `babel.config.js`:
@@ -25,7 +25,7 @@ module.exports = function (api) {
   api.cache(true);
   return {
     presets: ['babel-preset-expo'],
-    plugins: ['react-native-worklets-core/plugin'],
+    plugins: ['react-native-worklets/plugin'],
   };
 };
 ```
